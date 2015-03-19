@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="../../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/global/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css">
+</head>
+<body>
+<section class="container">
+    <div class="row">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="main-navigation-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="dropdown-submenu">
+                                    <a tabindex="1" href="#">Hover me for more options</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Second level</a></li>
+                                        <li><a href="#">Second level</a></li>
+                                        <li><a href="#">Second level</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <a role="link" data-toggle="dropdown" class="navbar-link">
+                                Settings<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                <li><a href="#">Some action</a></li>
+                                <li><a href="#">Some other action</a></li>
+                                <!--  <li class="divider"></li>-->
+                                <li class="dropdown-submenu">
+                                    <a tabindex="1" href="#">Hover me for more options</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Second level</a></li>
+                                        <li><a href="#">Second level</a></li>
+                                        <li><a href="#">Second level</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                </div>
+            </div>
+    </div>
+    </div>
+
+    </nav>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-list-alt"></span> <?php echo __('Order Management') ?> <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="<?php echo $this->webroot ?>buyerOrders/add"><span class="glyphicon glyphicon-plus-sign"></span> <?php echo __('Add Buyer Order') ?></a></li>
+                                <li class="divider"></li>
+                                <li><a href="<?php echo $this->webroot ?>buyerOrders"><span class="glyphicon glyphicon-list-alt"></span> <?php echo __('List Buyer Orders') ?></a></li>
+                                <li class="divider"></li>
+                                <li><a href="<?php echo $this->webroot ?>buyerOrderDetails"><span class="glyphicon glyphicon-stats"></span> <?php echo __('Add Knitting Plan') ?></a></li>
+                                <li class="divider"></li>
+                                <li><a href="<?php echo $this->webroot ?>knittingPlans"><span class="glyphicon glyphicon-shopping-cart"></span> <?php echo __('List Knitting Plans') ?></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-cloud-upload"></span> Production <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="<?php echo $this->webroot ?>jobcards"><span class="glyphicon glyphicon-credit-card"></span> <?php echo __('Jobcards - InHouse') ?></a></li>
+                                <li class="divider"></li>
+                                <li><a href="<?php echo $this->webroot ?>jobcards/jobcard_subcontact"><span class="glyphicon glyphicon-credit-card"></span> <?php echo __('Jobcards - Subcontact') ?></a></li>
+                                <li class="divider"></li>
+                                <li><a href="<?php echo $this->webroot ?>rolls"><span class="glyphicon glyphicon-registration-mark"></span> <?php echo __('Rolls') ?></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-cloud-upload"></span> Store <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="<?php echo $this->webroot ?>rolls/on_the_floor"><span class="glyphicon glyphicon-open"></span> <?php echo __('Floor Status') ?></a></li>
+                                <li class="divider"></li>
+                                <li><a href="<?php echo $this->webroot ?>rolls/chalan"><span class="glyphicon glyphicon-open"></span> <?php echo __('Chalan') ?></a></li>
+                                <li class="divider"></li>
+                                <li><a href="<?php echo $this->webroot ?>rolls/on_the_store"><span class="glyphicon glyphicon-save"></span> <?php echo __('Store Status') ?></a></li>
+                                <li class="divider"></li>
+                                <li><a href="<?php echo $this->webroot ?>rolls/delivered_rolls"><span class="glyphicon glyphicon-save"></span> <?php echo __('Delivered Rolls') ?></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class=" glyphicon glyphicon-file"></span> Reports <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="<?php echo $this->webroot ?>reports/machine_wise_daily_production"><span class="glyphicon glyphicon-calendar"></span> Daily Production</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="#"><span class="glyphicon glyphicon-list-alt"></span> Buyer Wise</a>
+                                    <ul class="dropdown-menu">
+                                        <?php if(isset($getAllBuyersForReport) && count($getAllBuyersForReport)) { ?>
+                                        <?php foreach ($getAllBuyersForReport as $key => $buyer) { ?>
+                                        <li><a tabindex="-1" href="<?php echo $this->webroot ?>reports/buyer_wise_report_single_buyer/ <?php echo $key ?>"><span class="glyphicon glyphicon-user"></span> <?php echo $buyer ?></a></li>
+                                        <li class="divider"></li>
+                                        <?php } ?>
+                                        <?php } ?>
+                                        <li><a tabindex="-1" href="<?php echo $this->webroot ?>reports/buyer_wise_report"><span class="glyphicon glyphicon-list-alt"></span> Details Report</a></li>
+                                    </ul>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="<?php echo $this->webroot ?>reports/due_production"><span class="glyphicon glyphicon-bell"></span> Production due</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a onclick="history.back();" href="javascript:void(0)"><span class="glyphicon glyphicon-arrow-left"></span></a></li>
+                        <li><a onclick="history.forward();" href="javascript:void(0)"><span class="glyphicon glyphicon-arrow-right"></span></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="<?php echo $this->webroot . 'dashboard' ?>"><span class="glyphicon glyphicon-th"></span> Dashboard</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<?php echo $this->webroot . 'logout' ?>"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+    </div>
+</section>
+<script src="../../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+
+</body>
+</html>

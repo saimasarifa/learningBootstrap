@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>table</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="../../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<header>
+
+</header>
+<section class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-responsive table-bordered">
+                <thead class="btn-primary">
+                <tr>
+                    <th class="text-center">BUYER</th>
+                    <th class="text-center">COLOR</th>
+                    <th class="text-center">GSM</th>
+                    <th class="text-center">DIA</th>
+                    <th class="text-center">ORDER QTY</th>
+                    <th class="text-center">PROCESS LOSS</th>
+                    <th class="text-center">TARGET QTY</th>
+                    <th class="text-center">FABRIC TYPE</th>
+                    <th class="text-center">CREATED</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Jhon</td>
+                    <td>Blue</td>
+                    <td>12</td>
+                    <td>2</td>
+                    <td>2333</td>
+                    <td>0%</td>
+                    <td>2333</td>
+                    <td>shifon</td>
+                    <td>Sun March 28 2015 12 pm</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-responsive table-bordered">
+                        <thead>
+                        <tr>
+                            <div class="col-md-4">
+                                <th class="text-center">Yarn  Details</th>
+                            </div>
+
+                            <div class="col-md-6">
+                                <th class="text-center">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <div class="col-md-3">
+                                                            <label >Yarn Count</label>
+                                                            <input class="form-control" type="text">
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label >Yarn Type </label>
+                                                            <input class="form-control"  type="text">
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label >Yarn Brand</label>
+                                                            <input class="form-control"  type="text">
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label >Yarn Lot</label>
+                                                            <input class="form-control"  type="text">
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </th>
+
+                            </div>
+                            <div class="col-md-2">
+                                <th class="text-center" rowspan="2">
+                                    <button type="button" class="btn btn-success">+</button>
+                                </th>
+                            </div>
+
+                        </tr>
+                        </thead>
+                        <thead>
+                        <tr>
+                            <th class="text-center">Sticth Lengths</th>
+
+                            <th class="text-center">
+                                <div class="col-md-12">
+                                    <input class="form-control" type="text" placeholder="Sl">
+                                </div>
+                            </th>
+
+
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-responsive table-bordered">
+
+                        <thead>
+                        <div class="col-md-3">
+                            <th class="text-center">
+                                <div class="row">
+                                    <label >Select Machine Dia</label>
+                                    <div class="col-md-12">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" >
+                                            <div class="input-group-btn">
+                                                <button type="button" class="btn btn-default dropdown-toggle"
+                                                        data-toggle="dropdown">
+                                                    <span class="caret"></span>
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+
+                        </div>
+                        <div class="col-md-3">
+                            <th class="text-center">
+                                <label>Machine Capacity</label>
+                                <input type="text" class="form-control">
+
+                            </th>
+
+                        </div>
+                        <div class="col-md-3">
+                            <th class="text-center">
+                                <label>Required Machine Qty</label>
+                                <input type="text" class="form-control">
+
+                            </th>
+
+                        </div>
+                        <div class="col-md-3">
+                            <th class="text-center">
+                                <label>Issue Date</label>
+                                <input type="text" class="form-control">
+
+                            </th>
+
+                        </div>
+
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Production Capacity Calculator</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-9">
+                     <div class="row">
+                      <div class="col-md-12">
+                         <div class="form-group">
+                          <div class="col-md-1">
+                            <label >Machine&nbsp; &nbsp;</label>
+                            <input class="form-control" type="text">
+                           </div>
+                            <div class="col-md-2">
+                            <label >No Of Feeder &nbsp; &nbsp;&nbsp; &nbsp;</label>
+                                <input class="form-control"  type="text">
+                        </div>
+                            <div class="col-md-1">
+                            <label >RPM</label><br /><br />
+                            <input class="form-control"  type="text">
+                        </div>
+                            <div class="col-md-2">
+                            <label>Machine Gauge</label>
+                            <input class="form-control" type="text">
+                        </div>
+                             <div class="col-md-2">
+                                 <label>Efficiency(%)</label><br /><br />
+                                 <input class="form-control" type="text">
+                             </div>
+                             <div class="col-md-2">
+                                 <label>Total Calculation</label>
+                                 <input class="form-control" type="text">
+                             </div>
+
+                             <div class="col-md-2">
+                                 <label>Total Calculation</label>
+
+                                 <button type="button" class="btn btn-primary">Calculate</button>
+
+                             </div>
+
+                          </div>
+                       </div>
+                     </div>
+                    </div>
+<!--
+                    <div class="col-md-2">
+                        <input type="text"><br />
+                        <br />
+
+                        <button type="button" class="btn btn-default">Default button</button>
+
+                        </div>
+-->
+                    <div class="col-md-3">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Production per day:</div>
+
+                        </div>
+
+                        <div class="panel panel-danger">
+                            <div class="panel-heading"> Assigned Machines:</div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-responsive table-bordered">
+                        <thead class="btn-primary">
+                        <tr>
+                            <th class="text-center">Machine No.</th>
+                            <th class="text-center">Buyer Name</th>
+                            <th class="text-center">Order Qty</th>
+                            <th class="text-center">Due Qty</th>
+                            <th class="text-center">Finished Date</th>
+                            <th class="text-center">Remaining Days</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Carter</td>
+                            <td>500</td>
+                            <td>3000</td>
+                            <td>25-01-2015</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Peter Parker</td>
+                            <td>907</td>
+                            <td>2000</td>
+                            <td>25-01-2015</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Rambo</td>
+                            <td>100</td>
+                            <td>11500</td>
+                            <td>25-01-2015</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>John Carter</td>
+                            <td>500</td>
+                            <td>0</td>
+                            <td>25-01-2015</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Peter Parker</td>
+                            <td>907</td>
+                            <td>2000</td>
+                            <td>25-01-2015</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>John Rambo</td>
+                            <td>100</td>
+                            <td>11500</td>
+                            <td>25-01-2015</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>John Carter</td>
+                            <td>500</td>
+                            <td>3000</td>
+                            <td>25-01-2015</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Peter Parker</td>
+                            <td>907</td>
+                            <td>0</td>
+                            <td>25-01-2015</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>John Rambo</td>
+                            <td>100</td>
+                            <td>11500</td>
+                            <td>25-01-2015</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>John Carter</td>
+                            <td>500</td>
+                            <td>3000</td>
+                            <td>25-01-2015</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Peter Parker</td>
+                            <td>907</td>
+                            <td>2000</td>
+                            <td>25-01-2015</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>John Rambo</td>
+                            <td>100</td>
+                            <td>0</td>
+                            <td>25-01-2015</td>
+                            <td>Available</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Roll Report</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<header>
+    <div class="row"><div class="col-md-12"></div></div>
+</header>
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search by Roll">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                      </span>
+                    </div><!-- /input-group -->
+                </div>
+                <div class="col-md-6"></div>
+                <div class="col-md-3">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search by STO">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                      </span>
+                    </div><!-- /input-group -->
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-12">
+            <button class="btn btn-info pull-right" onclick="window.print()"><span class="glyphicon glyphicon-print"></span> Print</button>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="text-center">Roll Report</h4>
+        </div>
+    </div>
+    <div class="row hidden-xs">
+        <div class="col-md-12 col-sm-12">
+            <table class="table table-responsive table-bordered">
+                <thead class="btn-primary">
+                <tr class="tableHeader">
+                    <th class="text-center">JOBCARD ID</th>
+                    <th class="text-center">ROLL NO</th>
+                    <th class="text-center">MACHINE</th>
+                    <th class="text-center">DIA</th>
+                    <th class="text-center">SHIFT</th>
+                    <th class="text-center">OPERATOR</th>
+                    <th class="text-center">WEIGHT</th>
+                    <th class="text-center">QC STATUS</th>
+                </tr>
+                </thead>
+                <tbody class="text-center">
+                    <td>00000002</td>
+                    <td>00000002_3 </td>
+                    <td>1</td>
+                    <td>22</td>
+                    <td>SHIFT B</td>
+                    <td>MR. A</td>
+                    <td>12 </td>
+                    <td><span class="glyphicon glyphicon-remove-circle"></span></td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row hidden-xs">
+        <div class="col-md-12 col-sm-12">
+            <h6>KNITTING PLAN</h6>
+            <table class="table table-responsive table-bordered">
+                <thead class="btn-primary">
+                <tr class="tableHeader">
+                    <th class="text-center">YARNS</th>
+                    <th class="text-center">STICTH LENGTH</th>
+                </tr>
+                </thead>
+                <tbody class="text-center">
+                    <td>24 40 56 60</td>
+                    <td>50</td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row hidden-xs">
+        <div class="col-md-12 col-sm-12">
+            <h6>BUYER ORDER</h6>
+            <table class="table table-responsive table-bordered">
+                <thead class="btn-primary">
+                <tr class="tableHeader">
+                    <th class="text-center">BUYER</th>
+                    <th class="text-center">REF. NO</th>
+                    <th class="text-center">COLOR</th>
+                    <th class="text-center">GSM</th>
+                    <th class="text-center">DIA</th>
+                    <th class="text-center">TARGET QTY</th>
+                </tr>
+                </thead>
+                <tbody class="text-center">
+                    <td>Mr. Smith</td>
+                    <td>001 </td>
+                    <td>Red</td>
+                    <td>12</td>
+                    <td>22 </td>
+                    <td>5940 KG</td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 hidden-lg hidden-md">
+            <div class="col-xs-6 pull-left">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>ROLL NO.</td><td>00000002_3 </td>
+                        </tr>
+                        <tr>
+                            <td><strong>MACHINE NO:</strong></td><td><strong>1</strong></td>
+                        </tr>
+                        <tr>
+                            <td>DIA/GAUGE</td><td>22 </td>
+                        </tr>
+                        <tr>
+                            <td>YARN</td><td>24 40 56 60</td>
+                        </tr>
+                        <tr>
+                            <td>S/L</td><td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-xs-6 pull-right">
+                <!-- <ul class="list-unstyled pull-right">
+                    
+                </ul> -->
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td><strong>BYER</strong></td><td><strong>Mr. Smith</strong></td>
+                        </tr>
+                        <tr>
+                            <td>COLOR</td><td>Red</td>
+                        </tr>
+                        <tr>
+                            <td>FAB</td><td></td>
+                        </tr>
+                        <tr>
+                            <td>GSM</td><td>12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <h6>GRAY FABRIC INSPECTION REPORT</h6>
+            <table class="table table-responsive table-bordered">
+                <tbody>
+                <tr>
+                    <td class="text-center hidden-xs">
+                        <div class="form-group">
+                            <label for="machine_no">MACHINE NO.</label>
+                            <input type="text" name="" id="" class="form-control" value="">
+                        </div>
+                    </td>
+                    <td class="text-center hidden-xs">
+                        <form action="" method="POST" role="form">
+                            <div class="form-group">
+                                <label for="qc_name">QC NAME</label>
+                                <select class="form-control" id="sel1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                        </form>
+                    </td>
+                    <td class="text-center hidden-xs">
+                        <form action="" method="" role="form">
+                            <div class="form-group">
+                                <label for="shift">SHIFT</label>
+                                <select class="form-control" id="sel1">
+                                    <option>Shift A</option>
+                                    <option>Shift B</option>
+                                    <option>Shift C</option>
+                                </select>
+                            </div>
+                        </form>
+
+                    </td>
+                    <td class="text-center hidden-xs">
+                        <div class="form-group">
+                            <label for="">SHINKER</label>
+                            <input type="text" name="" id="input" class="form-control" value="">
+                        </div>
+                    </td>
+                    <td class="text-center hidden-xs">
+                        <div class="form-group">
+                            <label for="">LYCRA OUT</label>
+                            <input type="text" name="" id="input" class="form-control" value="">
+                        </div>
+                    </td>
+                    <td class="text-center hidden-xs">
+                        <div class="form-group">
+                            <label for="">GRADE</label>
+                            <input type="text" name="" id="input" class="form-control" value="">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <div class="form-group">
+                            <input type="text" name="" id="input" class="form-control text-center btn-block" value="" placeholder="HOLE">
+                            <button type="button" class="btn btn-success btn-md btn-block">HOLE +</button>
+                            <button type="button" class="btn btn-danger btn-md btn-block">HOLE -</button>
+                        </div>
+                    </td>
+                    <td class="text-center">
+                        <div class="form-group">
+                            <input type="text" name="" id="input" class="form-control text-center btn-block" value="" placeholder="LOOP">
+                            <button type="button" class="btn btn-success btn-md btn-block">LOOP +</button>
+                            <button type="button" class="btn btn-danger btn-md btn-block">LOOP -</button>
+                        </div>
+                    </td>
+                    <td class="text-center">
+                        <div class="form-group">
+                            <input type="text" name="" id="input" class="form-control text-center btn-block" value="" placeholder="SET OFF">
+                            <button type="button" class="btn btn-success btn-md btn-block">SET OFF +</button>
+                            <button type="button" class="btn btn-danger btn-md btn-block">SET OFF -</button>
+                        </div>
+                    </td>
+                    <td class="text-center">
+                        <div class="form-group">
+                            <input type="text" name="" id="input" class="form-control text-center btn-block" value="" placeholder="DIRT">
+                            <button type="button" class="btn btn-success btn-md btn-block">DIRT +</button>
+                            <button type="button" class="btn btn-danger btn-md btn-block">DIRT -</button>
+                        </div>
+                    </td>
+                    <td class="text-center">
+                        <div class="form-group">
+                            <input type="text" name="" id="input" class="form-control text-center btn-block" value="" placeholder="DEFFECT(KG)">
+                            <button type="button" class="btn btn-success btn-md btn-block">DEFFECT +</button>
+                            <button type="button" class="btn btn-danger btn-md btn-block">DEFFECT -</button>
+                        </div>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <div class="form-group">
+                            <input type="text" name="" id="input" class="form-control text-center btn-block" value="" placeholder="OIL SPOT">
+                            <button type="button" class="btn btn-success btn-md btn-block">OIL SPOT +</button>
+                            <button type="button" class="btn btn-danger btn-md btn-block">OIL SPOT -</button>
+                        </div>
+                    </td>
+                    <td class="text-center">
+                        <div class="form-group">
+                            <input type="text" name="" id="input" class="form-control text-center btn-block" value="" placeholder="F/CONTRA">
+                            <button type="button" class="btn btn-success btn-md btn-block">F/CONTRA +</button>
+                            <button type="button" class="btn btn-danger btn-md btn-block">F/CONTRA -</button>
+                        </div>
+                    </td>
+                    <td class="text-center">
+                        <div class="form-group">
+                            <input type="text" name="" id="input" class="form-control text-center btn-block" value="" placeholder="SLUB">
+                            <button type="button" class="btn btn-success btn-md btn-block">SLUB +</button>
+                            <button type="button" class="btn btn-danger btn-md btn-block">SLUB -</button>
+                        </div>
+                    </td>
+                    <td class="text-center">
+                        <div class="form-group">
+                            <input type="text" name="" id="input" class="form-control text-center btn-block" value="" placeholder="OTHER">
+                            <button type="button" class="btn btn-success btn-md btn-block">OTHER +</button>
+                            <button type="button" class="btn btn-danger btn-md btn-block">OTHER -</button>
+                        </div>
+                    </td>
+                    <td class="text-center">
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary btn-block">PASS TO STORE</button>
+                            <button type="button" class="btn btn-danger btn-block" onclick="alert('Are you sure?');">REJECT</button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+
+
+<script src="/jquery.min.js" type="text/javascript"></script>
+<script src="/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+</section>
+<footer>
+
+</footer>
+</body>
+</html>

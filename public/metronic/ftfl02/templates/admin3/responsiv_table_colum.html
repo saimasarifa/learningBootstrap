@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Bootstrap 3 Responsive Layout Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="../../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="table-responsive">
+    <table class="table table-responsive table-bordered">
+        <thead class="btn-primary">
+        <tr class="tableHeader">
+            <th>Byer Order ID</th>
+            <th>Colour</th>
+            <th>GMS</th>
+            <th>DIA</th>
+            <th>ORDER QTY</th>
+            <th>PROCESS Loss</th>
+            <th>knitting_qty</th>
+            <th>fabric_type</th>
+            <th>status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+
+            <td ></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="text-center middleAlign">&nbsp;</td>
+            <td class="text-center middleAlign"><?php echo h($buyerOrderDetail['BuyerOrderDetail']['process_loss']); ?>%&nbsp;</td>
+            <td class="text-center middleAlign"><?php echo h($buyerOrderDetail['BuyerOrderDetail']['defected_qty']); ?>KG</td>
+            <td class="text-center middleAlign"><?php echo h($buyerOrderDetail['BuyerOrderDetail']['knitting_qty']); ?>&nbsp;</td>
+            <td>&nbsp;</td>
+
+
+            </td>
+        </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+</div>
+
+</body>
+
+</html>
+
